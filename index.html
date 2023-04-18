@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Planets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <nav class="header"> <!-- div for header -->
+        <div class="logo">
+            <h2>the planets</h2>
+        </div>
+        <ul class="nav_links" style="display: inline-flex">
+            <li class="nav_item"> <!-- clasa ne treba -->
+                <a style="text-decoration: none" href="#"><h4 class="nav_link mercury" >mercury</h4></a>
+            </li>
+            <li class="nav_item">
+                <a style="text-decoration: none" href="#"><h4 class="nav_link venus">venus</h4></a>
+            </li>
+            <li class="nav_item">
+                <a style="text-decoration: none" href="#"><h4 class="nav_link earth">earth</h4></a>
+            </li>
+            <li class="nav_item">
+                <a style="text-decoration: none" href="#"><h4 class="nav_link mars">mars</h4></a>
+            </li>
+            <li class="nav_item">
+                <a style="text-decoration: none" href="#"><h4 class="nav_link jupiter">jupiter</h4></a>
+            </li>
+            <li class="nav_item">
+                <a style="text-decoration: none" href="#"><h4 class="nav_link saturn">saturn</h4></a>
+            </li>
+            <li class="nav_item">
+                <a style="text-decoration: none" href="#"><h4 class="nav_link uranus">uranus</h4></a>
+            </li>
+            <li class="nav_item">
+                <a style="text-decoration: none" href="#"><h4 class="nav_link neptune">neptune</h4></a>
+            </li>
+        </ul>
+    </nav>
+    <hr style="border: 1px solid #838391">
+<!--       staviti grid na sirokom da bude 2 stupca, na tabletu 1 stupac-->
+    <div class="wrapper">
+        <div class="content">
+            <div class="image">
+                <img src="assets/planet-mercury.svg" alt="mercury" style="height: 290px; width: 290px">
+            </div>
+            <div class="informations">
+                <h1>mercury</h1>
+                <p>Mercury is the smallest planet in the Solar <br>
+                    System and the closest to the Sun. Its orbit <br>
+                    around the Sun takes 87.97 Earth days, the <br>
+                    shortest of all the Sun's planets. Mercury is one <br>
+                    of four terrestrial planets in the Solar System, <br>
+                    and is a rocky body like Earth.
+                </p>
+<!--                    <span>Source: Wikipedia <a href="#"><img src="assets/icon-source.svg" alt="Wikipedia"/></a></span>-->
+                <span>Source: Wikipedia
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path fill="#FFF" d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 01-.305.46.544.544 0 01-.195.04.465.465 0 01-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 01-.352.149.48.48 0 01-.352-.149l-.796-.797a.48.48 0 01-.149-.351.48.48 0 01.149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 015.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0110 2.5v3.75z" opacity=".5"/>
+                            </svg>
+                    </a>
+                </span>
+            </div>
+            <div class="buttons">
+                <ul class="buttons-list">
+                    <li>
+                        <a href="#" class="btn mercury"><h3><span style="margin-right: 15px">01</span> OVERVIEW</h3></a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn mercury"><h3><span style="margin-right: 15px">02</span> INTERNAL STRUCTURE</h3></a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn mercury"><h3><span style="margin-right: 15px">03</span> SURFACE GEOLOGY</h3></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="boxes">
+                <div id="rotation-time" class="box">
+                    <h4>ROTATION TIME</h4>
+                    <h2>58.6 DAYS</h2>
+                </div>
+                <div id="revolution-time" class="box">
+                    <h4>REVOLUTION TIME</h4>
+                    <h2>87.97 DAYS</h2>
+                </div>
+                <div id="radius" class="box">
+                    <h4>RADIUS</h4>
+                    <h2>2,439.7 KM</h2>
+                </div>
+                <div id="average-temp" class="box">
+                    <h4>AVERAGE TEMP.</h4>
+                    <h2>430°C</h2>
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

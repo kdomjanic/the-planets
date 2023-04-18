@@ -1,0 +1,234 @@
+:root {
+    --white-color: #ffffff;
+    --midnight-blue-color: #070724;
+    --dark-grey-color: #38384F;
+    --light-grey-color: #838391;
+    --teal-color: #419EBB;
+    --yellow-color: #EDA249;
+    --purple-color: #6F2ED6;
+    --dark-orange-color: #D14C32;
+    --red-color: #D83A34;
+    --light-brown-color: #CD5120;
+    --green-color: #1EC2A4;
+    --blue-color: #2D68F0
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/*img, svg {*/
+/*    display: block;*/
+/*    max-width: 100%;*/
+/*}*/
+
+body {
+    background-color: var(--midnight-blue-color);
+    background-image: url("assets/background-stars.svg");
+    margin: 0;
+    width: 100%;
+    font-family: 'Spartan', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--white-color);
+}
+
+h1 {
+    font-family: 'Antonio', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 103px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    margin: 0;
+}
+h2 {
+    font-family: 'Antonio', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: -1.5px;
+    line-height: 52px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Spartan', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 2.6px;
+    line-height: 25px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h4 {
+    font-family: 'Spartan', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: var(--light-grey-color);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* NAVIGATION */
+.header {
+    height: 10vh;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 25px;
+}
+
+.nav_links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+
+.nav_link {
+    display: block;
+    margin: 25px;
+}
+.nav_item {
+    text-decoration: none;
+}
+
+
+.nav_link.mercury:hover {
+    color: var(--teal-color);
+}
+.nav_link.venus:hover {
+    color: var(--yellow-color);
+}
+.nav_link.earth:hover {
+    color: var(--purple-color);
+}
+.nav_link.mars:hover {
+    color: var(--dark-orange-color);
+}
+.nav_link.jupiter:hover {
+    color: var(--red-color);
+}
+.nav_link.saturn:hover {
+    color: var(--light-brown-color);
+}
+.nav_link.uranus:hover {
+    color: var(--green-color);
+}
+.nav_link.neptune:hover {
+    color: var(--blue-color);
+}
+
+.wrapper {
+    margin: 10vh 10vw 10vh 10vw;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: start;
+    /*margin: 0 10vw 0 10vw;*/
+    margin: 0 0 5vh 0 ;
+}
+
+.image {
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    place-items: center;
+}
+
+.informations {
+    /*font-family: 'Spartan', sans-serif;*/
+    /*font-size: 14px;*/
+    /*line-height: 25px;*/
+    /*color: var(--white-color);*/
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+    align-content: start;
+    place-items: start;
+    width: 350px;
+}
+
+.buttons {
+    display: grid;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+
+}
+
+.buttons-list {
+    list-style-type: none;
+
+}
+
+.btn {
+    border: 1px solid white;
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    text-decoration: none;
+    width: 350px;
+    height: 48px;
+    cursor: pointer;
+    margin: 15px 0 0 0;
+    padding: 10px 0 0 25px;
+}
+
+.btn:active {
+    background-color: var(--teal-color);
+}
+
+.btn:hover {
+    background-color: var(--dark-grey-color);
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.box{
+    border: 1px solid white;
+    width: 23%;
+    height: 130px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
