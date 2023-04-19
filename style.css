@@ -249,10 +249,120 @@ h4 {
 }
 
 
+/* tablets */
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    body {
+        font-size: 11px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 9px;
+    }
+
+    .header {
+        height: 15vh;
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px
+    }
+
+    .nav_links {
+        display: inline-flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+    }
+    .nav_link {
+        text-decoration: none;
+    }
+    .nav_link_text {
+        display: block;
+        margin: 15px;
+    }
+
+    .wrapper {
+        margin: 3vh 5vw 3vh 5vw;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-content: start;
+        margin: 0 0 20px 0 ;
+    }
+
+    .image {
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        place-items: center;
+        margin: 10vh 10vw
+    }
+
+    .imageOverview {
+        height: 180px;
+        width: 180px
+    }
+
+    .imageInternal {
+        height: 180px;
+        width: 180px
+    }
+
+    .imageSurface {
+        position:absolute;
+        top: 400px;
+        height: 160px;
+        width: 130px
+    }
+
+    .information {
+        width: 40vw;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5px;
+        place-items: start;
+        padding: 0;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5px;
+    }
+
+    .buttons-list {
+        padding-bottom: 25px;
+        width: 40vw;
+    }
+
+    .btn {
+        height: 40px;
+        margin: 0 0 15px 0;
+    }
+
+    .box{
+        height: 90px;
+        padding: 0 10px
+    }
+
+}
 
 
 
 
 
+/* phones */
+@media only screen and (max-width: 600px) {
 
-
+}
