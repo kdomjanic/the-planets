@@ -13,34 +13,34 @@
 
 </head>
 <body>
-    <nav class="header"> <!-- div for header -->
+    <nav class="header">
         <div class="logo">
             <h2>the planets</h2>
         </div>
-        <ul class="nav_links" style="display: inline-flex">
-            <li class="nav_item"> <!-- clasa ne treba -->
-                <a style="text-decoration: none" href="#"><h4 class="nav_link mercury" >mercury</h4></a>
+        <ul class="nav_links">
+            <li class="nav_item">
+                <a class="nav_link" href="#" ><h4 class="nav_link_text mercury" >mercury</h4></a>
             </li>
             <li class="nav_item">
-                <a style="text-decoration: none" href="#"><h4 class="nav_link venus">venus</h4></a>
+                <a class="nav_link" href="#"><h4 class="nav_link_text venus">venus</h4></a>
             </li>
             <li class="nav_item">
-                <a style="text-decoration: none" href="#"><h4 class="nav_link earth">earth</h4></a>
+                <a class="nav_link" href="#"><h4 class="nav_link_text earth">earth</h4></a>
             </li>
             <li class="nav_item">
-                <a style="text-decoration: none" href="#"><h4 class="nav_link mars">mars</h4></a>
+                <a class="nav_link" href="#"><h4 class="nav_link_text mars">mars</h4></a>
             </li>
             <li class="nav_item">
-                <a style="text-decoration: none" href="#"><h4 class="nav_link jupiter">jupiter</h4></a>
+                <a class="nav_link" href="#"><h4 class="nav_link_text jupiter">jupiter</h4></a>
             </li>
             <li class="nav_item">
-                <a style="text-decoration: none" href="#"><h4 class="nav_link saturn">saturn</h4></a>
+                <a class="nav_link" href="#"><h4 class="nav_link_text saturn">saturn</h4></a>
             </li>
             <li class="nav_item">
-                <a style="text-decoration: none" href="#"><h4 class="nav_link uranus">uranus</h4></a>
+                <a class="nav_link" href="#"><h4 class="nav_link_text uranus">uranus</h4></a>
             </li>
             <li class="nav_item">
-                <a style="text-decoration: none" href="#"><h4 class="nav_link neptune">neptune</h4></a>
+                <a class="nav_link" href="#"><h4 class="nav_link_text neptune">neptune</h4></a>
             </li>
         </ul>
     </nav>
@@ -48,18 +48,34 @@
     <div class="wrapper">
         <div class="content">
             <div class="image">
-                <img src="assets/planet-mercury.svg" alt="mercury" style="height: 290px; width: 290px">
+                <img src="assets/planet-mercury.svg" alt="mercury" class="imageOverview">
+                <img src="assets/planet-mercury-internal.svg" alt="mercury" class="imageInternal hidden">
+                <img src="assets/geology-mercury.png" alt="mercury" class="imageSurface hidden">
             </div>
-            <div class="informations">
+            <div class="information">
                 <h1>mercury</h1>
-                <p style="width: 100%">Mercury is the smallest planet in the Solar <br>
+                <p class="textOverview" >Mercury is the smallest planet in the Solar <br>
                     System and the closest to the Sun. Its orbit <br>
                     around the Sun takes 87.97 Earth days, the <br>
                     shortest of all the Sun's planets. Mercury is one <br>
                     of four terrestrial planets in the Solar System, <br>
                     and is a rocky body like Earth.
                 </p>
-                <span class="source">Source: <a href="#" style="color: var(--light-grey-color); font-weight: bold">Wikipedia</a>
+                <p class="textInternal hidden">Mercury appears to have a solid silicate crust <br>
+                    and mantle overlying a solid, iron sulfide outer <br>
+                    core layer, a deeper liquid core layer, and a <br>
+                    solid inner core. The planet's density is the <br>
+                    second highest in the Solar System at 5.427 <br>
+                    g/cm3 , only slightly less than Earth's density.
+                </p>
+                <p class="textSurface hidden">Mercury's surface is similar in appearance to <br>
+                    that of the Moon, showing extensive mare-like <br>
+                    plains and heavy cratering, indicating that it <br>
+                    has been geologically inactive for billions of <br>
+                    years. It is more heterogeneous than either <br>
+                    Mars's or the Moon’s.
+                </p>
+                <span class="light-grey">Source: <a href="#" class="light-grey bold" >Wikipedia</a>
                     <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path fill="#FFF" d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 01-.305.46.544.544 0 01-.195.04.465.465 0 01-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 01-.352.149.48.48 0 01-.352-.149l-.796-.797a.48.48 0 01-.149-.351.48.48 0 01.149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 015.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0110 2.5v3.75z" opacity=".5"/>
                             </svg>
@@ -69,41 +85,51 @@
             <div class="buttons">
                 <ul class="buttons-list">
                     <li>
-                        <a href="#" class="btn mercury">
+                        <a href="#" class="btn btn-overview active mercury">
                             <h3>
-                                <span style="margin-right: 15px; color: var(--light-grey-color)">01</span>
+                                <span class="light-grey margin-right-15px">01</span>
                                 OVERVIEW
-                            </h3></a>
+                            </h3>
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="btn mercury"><h3><span style="margin-right: 15px;  color: var(--light-grey-color)">02</span> INTERNAL STRUCTURE</h3></a>
+                        <a href="#" class="btn btn-internal mercury">
+                            <h3>
+                                <span class="light-grey margin-right-15px">02</span>
+                                INTERNAL STRUCTURE
+                            </h3>
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="btn mercury"><h3><span style="margin-right: 15px;  color: var(--light-grey-color)">03</span> SURFACE GEOLOGY</h3></a>
+                        <a href="#" class="btn btn-surface mercury">
+                            <h3>
+                                <span class="light-grey margin-right-15px">03</span>
+                                SURFACE GEOLOGY
+                            </h3>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="boxes">
-                <div id="rotation-time" class="box">
-                    <h4>ROTATION TIME</h4>
-                    <h2>58.6 DAYS</h2>
-                </div>
-                <div id="revolution-time" class="box">
-                    <h4>REVOLUTION TIME</h4>
-                    <h2>87.97 DAYS</h2>
-                </div>
-                <div id="radius" class="box">
-                    <h4>RADIUS</h4>
-                    <h2>2,439.7 KM</h2>
-                </div>
-                <div id="average-temp" class="box">
-                    <h4>AVERAGE TEMP.</h4>
-                    <h2>430°C</h2>
-                </div>
+            <div id="rotation-time" class="box">
+                <h4>ROTATION TIME</h4>
+                <h2>58.6 DAYS</h2>
+            </div>
+            <div id="revolution-time" class="box">
+                <h4>REVOLUTION TIME</h4>
+                <h2>87.97 DAYS</h2>
+            </div>
+            <div id="radius" class="box">
+                <h4>RADIUS</h4>
+                <h2>2,439.7 KM</h2>
+            </div>
+            <div id="average-temp" class="box">
+                <h4>AVERAGE TEMP.</h4>
+                <h2>430°C</h2>
+            </div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>

@@ -19,11 +19,6 @@
     box-sizing: border-box;
 }
 
-/*img, svg {*/
-/*    display: block;*/
-/*    max-width: 100%;*/
-/*}*/
-
 body {
     background-color: var(--midnight-blue-color);
     background-image: url("assets/background-stars.svg");
@@ -56,7 +51,6 @@ h2 {
     text-transform: uppercase;
     margin: 0;
 }
-
 h3 {
     font-family: 'Spartan', sans-serif;
     font-style: normal;
@@ -68,7 +62,6 @@ h3 {
     text-transform: uppercase;
     margin: 0;
 }
-
 h4 {
     font-family: 'Spartan', sans-serif;
     font-style: normal;
@@ -79,6 +72,11 @@ h4 {
     color: var(--light-grey-color);
     text-transform: uppercase;
     margin: 0;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
 }
 
 /* NAVIGATION */
@@ -95,51 +93,48 @@ h4 {
 }
 
 .nav_links {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     list-style: none;
-margin: 10px
+    margin: 10px
 }
-
-
 .nav_link {
+    text-decoration: none;
+}
+.nav_link_text {
     display: block;
     margin: 25px;
 }
-.nav_item {
-    text-decoration: none;
-}
 
-
-.nav_link.mercury:hover {
+.nav_link_text.mercury:hover {
     color: var(--teal-color);
 }
-.nav_link.venus:hover {
+.nav_link_text.venus:hover {
     color: var(--yellow-color);
 }
-.nav_link.earth:hover {
+.nav_link_text.earth:hover {
     color: var(--purple-color);
 }
-.nav_link.mars:hover {
+.nav_link_text.mars:hover {
     color: var(--dark-orange-color);
 }
-.nav_link.jupiter:hover {
+.nav_link_text.jupiter:hover {
     color: var(--red-color);
 }
-.nav_link.saturn:hover {
+.nav_link_text.saturn:hover {
     color: var(--light-brown-color);
 }
-.nav_link.uranus:hover {
+.nav_link_text.uranus:hover {
     color: var(--green-color);
 }
-.nav_link.neptune:hover {
+.nav_link_text.neptune:hover {
     color: var(--blue-color);
 }
-
 .horizontal-line {
     border: 1px solid var(--light-grey-color)
 }
 
+/* MAIN CONTENT */
 .wrapper {
     margin: 12vh 10vw 10vh 10vw;
 }
@@ -160,7 +155,24 @@ margin: 10px
     place-items: center;
 }
 
-.informations {
+.imageOverview {
+    height: 290px;
+    width: 290px
+}
+
+.imageInternal {
+    height: 290px;
+    width: 290px
+}
+
+.imageSurface {
+    position:absolute;
+    top: 550px;
+    height: 200px;
+    width: 160px
+}
+
+.information {
     width: 27vw;
     padding-left: 2vw;
     display: grid;
@@ -169,8 +181,16 @@ margin: 10px
     place-items: start;
 }
 
-.source {
+.light-grey {
     color: var(--light-grey-color);
+}
+
+.margin-right-15px {
+    margin-right: 15px;
+}
+
+.bold {
+    font-weight: bold
 }
 
 .buttons {
@@ -178,7 +198,7 @@ margin: 10px
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 5px;
     place-items: end;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .buttons-list {
@@ -201,13 +221,14 @@ margin: 10px
     padding: 10px 0 0 25px;
 }
 
-.btn:active {
+.active.mercury {
     background-color: var(--teal-color);
 }
 
-.btn:hover {
+.btn.mercury:hover {
     background-color: var(--dark-grey-color);
 }
+
 
 .boxes {
     display: flex;
@@ -215,7 +236,6 @@ margin: 10px
     justify-content: space-between;
     width: 100%;
 }
-
 .box{
     border: 1px solid var(--light-grey-color);
     width: 23%;
