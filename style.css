@@ -139,6 +139,8 @@ h4 {
 .menu-icon {
     display: none;
 }
+
+/* SMALL VIEW BUTTONS */
 .small-navigation {
     display: none;
 }
@@ -204,17 +206,10 @@ h4 {
     justify-content: space-between;
     padding: 0 7vw 0 7vw;
 }
-.side-nav-item h4 {
-    font-size: 15px;
-    text-decoration: none;
-
-}
-
 
 .side-nav-link-text {
     display: block;
     margin: 15px;
-    /*text-decoration: none;*/
     color: var(--white-color);
 }
 
@@ -223,10 +218,6 @@ h4 {
     align-items: center;
     justify-content: start;
 }
-
-/*.dot-wrapper a h4 {*/
-/*    text-decoration: none;*/
-/*}*/
 
 .horizontal-line-side {
     width: 90%;
@@ -265,7 +256,6 @@ h4 {
 .dot.neptune {
     background-color: var(--neptune-color);
 }
-
 
 /* MAIN CONTENT */
 .wrapper {
@@ -315,7 +305,6 @@ h4 {
 }
 
 /* INFORMATION */
-
 .information {
     width: 27vw;
     padding-left: 2vw;
@@ -337,7 +326,6 @@ h4 {
 
 .information a {
     color: var(--white-color);
-
 }
 
 .opacity {
@@ -420,7 +408,6 @@ h4 {
 .box h2 {
     font-size: 40px;
 }
-
 
 /* tablets */
 @media only screen and (min-width: 600px) and (max-width: 800px) {
