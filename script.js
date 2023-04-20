@@ -1,12 +1,12 @@
 'use strict';
 
-const imageOverview = document.querySelector('.imageOverview')
-const imageInternal = document.querySelector('.imageInternal')
-const imageSurface = document.querySelector('.imageSurface')
+const imageOverview = document.querySelector('.image-overview')
+const imageInternal = document.querySelector('.image-internal')
+const imageSurface = document.querySelector('.image-surface')
 
-const textOverview = document.querySelector('.textOverview')
-const textInternal = document.querySelector('.textInternal')
-const textSurface = document.querySelector('.textSurface')
+const textOverview = document.querySelector('.text-overview')
+const textInternal = document.querySelector('.text-internal')
+const textSurface = document.querySelector('.text-surface')
 
 const btnOverview = document.querySelector('.btn-overview')
 const btnInternal = document.querySelector('.btn-internal')

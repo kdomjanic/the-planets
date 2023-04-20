@@ -34,7 +34,7 @@ h1 {
     font-family: 'Antonio', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 80px;
+    /*font-size: 80px;*/
     line-height: 103px;
     color: var(--white-color);
     text-transform: uppercase;
@@ -44,7 +44,7 @@ h2 {
     font-family: 'Antonio', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    /*font-size: 40px;*/
     letter-spacing: -1.5px;
     line-height: 52px;
     color: var(--white-color);
@@ -55,7 +55,7 @@ h3 {
     font-family: 'Spartan', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    /*font-size: 12px;*/
     letter-spacing: 2.6px;
     line-height: 25px;
     color: var(--white-color);
@@ -66,7 +66,7 @@ h4 {
     font-family: 'Spartan', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
+    /*font-size: 11px;*/
     letter-spacing: 1px;
     line-height: 25px;
     color: var(--light-grey-color);
@@ -87,52 +87,92 @@ h4 {
     justify-content: space-between;
     align-items: center;
 }
-
 .logo {
     margin-left: 25px;
 }
-
-.nav_links {
+.logo h2 {
+    font-size: 28px;
+}
+.nav-links {
     display: inline-flex;
     align-items: center;
     list-style: none;
     margin: 10px
 }
-.nav_link {
+.nav-item h4 {
+    font-size: 11px;
+}
+.nav-link {
     text-decoration: none;
 }
-.nav_link_text {
+.nav-link-text {
     display: block;
     margin: 25px;
 }
-
-.nav_link_text.mercury:hover {
+.nav-link-text.mercury:hover {
     color: var(--teal-color);
 }
-.nav_link_text.venus:hover {
+.nav-link-text.venus:hover {
     color: var(--yellow-color);
 }
-.nav_link_text.earth:hover {
+.nav-link-text.earth:hover {
     color: var(--purple-color);
 }
-.nav_link_text.mars:hover {
+.nav-link-text.mars:hover {
     color: var(--dark-orange-color);
 }
-.nav_link_text.jupiter:hover {
+.nav-link-text.jupiter:hover {
     color: var(--red-color);
 }
-.nav_link_text.saturn:hover {
+.nav-link-text.saturn:hover {
     color: var(--light-brown-color);
 }
-.nav_link_text.uranus:hover {
+.nav-link-text.uranus:hover {
     color: var(--green-color);
 }
-.nav_link_text.neptune:hover {
+.nav-link-text.neptune:hover {
     color: var(--blue-color);
 }
 .horizontal-line {
+    margin: 0;
     border: 1px solid var(--light-grey-color)
 }
+.menu-icon {
+    display: none;
+}
+.small-navigation {
+    display: none;
+}
+.small-navigation-list {
+    width: 100%;
+    height: 5vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.small-navigation h3 {
+    font-size: 9px;
+}
+
+.btn-navi {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.active-tab.mercury {
+    height: 5vh;
+    align-items: center;
+    border-bottom: 2px solid var(--teal-color);
+}
+
+
 
 /* MAIN CONTENT */
 .wrapper {
@@ -146,6 +186,8 @@ h4 {
     margin: 0 0 7vh 0 ;
 }
 
+/* IMAGE */
+
 .image {
     display: grid;
     grid-row-start: 1;
@@ -155,22 +197,24 @@ h4 {
     place-items: center;
 }
 
-.imageOverview {
+.image-overview {
     height: 290px;
     width: 290px
 }
 
-.imageInternal {
+.image-internal {
     height: 290px;
     width: 290px
 }
 
-.imageSurface {
+.image-surface {
     position:absolute;
     top: 550px;
     height: 200px;
     width: 160px
 }
+
+/* INFORMATION */
 
 .information {
     width: 27vw;
@@ -180,19 +224,27 @@ h4 {
     grid-gap: 10px;
     place-items: start;
 }
+.information h1 {
+    font-size: 80px;
+}
+.information p {
+    font-size: 14px;
+}
+.information span {
+    font-size: 14px;
+}
 
 .light-grey {
     color: var(--light-grey-color);
 }
-
 .margin-right-15px {
     margin-right: 15px;
 }
-
 .bold {
     font-weight: bold
 }
 
+/* BUTTONS */
 .buttons {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -229,7 +281,11 @@ h4 {
     background-color: var(--dark-grey-color);
 }
 
+.buttons h3 {
+    font-size: 12px;
+}
 
+/* BOXES */
 .boxes {
     display: flex;
     flex-direction: row;
@@ -247,24 +303,17 @@ h4 {
     padding-left: 20px;
     padding-bottom: 15px;
 }
+.box h4 {
+    font-size: 11px;
+}
+.box h2 {
+    font-size: 40px;
+}
 
 
 /* tablets */
 @media only screen and (min-width: 600px) and (max-width: 800px) {
-    body {
-        font-size: 11px;
-    }
-    h1 {
-        font-size: 48px;
-    }
-    h2 {
-        font-size: 28px;
-    }
-    h3 {
-        font-size: 9px;
-    }
-
-    .header {
+     .header {
         height: 15vh;
         width: inherit;
         display: flex;
@@ -273,17 +322,23 @@ h4 {
         align-items: center;
         padding-top: 20px
     }
-
-    .nav_links {
+    .logo h2 {
+        font-size: 28px;
+    }
+    .nav-links {
         display: inline-flex;
         align-items: center;
         list-style: none;
         padding: 0;
+        margin: 0;
     }
-    .nav_link {
+    .nav-item h4 {
+        font-size: 11px;
+    }
+    .nav-link {
         text-decoration: none;
     }
-    .nav_link_text {
+    .nav-link-text {
         display: block;
         margin: 15px;
     }
@@ -291,7 +346,6 @@ h4 {
     .wrapper {
         margin: 3vh 5vw 3vh 5vw;
     }
-
     .content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -308,18 +362,15 @@ h4 {
         place-items: center;
         margin: 10vh 10vw
     }
-
-    .imageOverview {
+    .image-overview {
         height: 180px;
         width: 180px
     }
-
-    .imageInternal {
+    .image-internal {
         height: 180px;
         width: 180px
     }
-
-    .imageSurface {
+    .image-surface {
         position:absolute;
         top: 400px;
         height: 160px;
@@ -334,35 +385,158 @@ h4 {
         place-items: start;
         padding: 0;
     }
+    .information h1 {
+        font-size: 48px;
+    }
+    .information p {
+        font-size: 11px;
+    }
+    .information span {
+        font-size: 12px;
+    }
 
     .buttons {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 5px;
     }
-
     .buttons-list {
         padding-bottom: 25px;
         width: 40vw;
     }
-
     .btn {
         height: 40px;
         margin: 0 0 15px 0;
+    }
+    .buttons h3 {
+        font-size: 9px;
     }
 
     .box{
         height: 90px;
         padding: 0 10px
     }
-
+    .box h4 {
+        font-size: 8px;
+    }
+    .box h2 {
+        font-size: 24px;
+        margin-top: -5px
+    }
 }
-
-
-
-
 
 /* phones */
 @media only screen and (max-width: 600px) {
+    /*body {*/
+    /*    font-size: 11px;*/
+    /*}*/
+    /*h1 {*/
+    /*    font-size: 40px;*/
+    /*}*/
+    /*h2 {*/
+    /*    font-size: 28px;*/
+    /*}*/
+    /*h3 {*/
+    /*    font-size: 9px;*/
+    /*}*/
 
+    .header {
+        height: 7vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo h2 {
+        font-size: 28px;
+    }
+
+    .menu-icon {
+        display: block;
+        align-items: center;
+        padding: 30px 20px 20px 20px
+    }
+    .nav-links {
+        display: none ;
+    }
+
+    .small-navigation {
+        display: block;
+    }
+
+    .wrapper {
+        margin: 2vh 7vw 2vh 7vw;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 20px 0 ;
+    }
+
+    .image {
+        margin: 10vh 10vw
+    }
+    .image-overview {
+        height: 110px;
+        width: 110px
+    }
+    .image-internal {
+        height: 180px;
+        width: 180px
+    }
+    .image-surface {
+        position:absolute;
+        top: 400px;
+        height: 160px;
+        width: 130px
+    }
+
+    .information {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .information h1 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+    .information p {
+        font-size: 11px;
+        line-height: 22px;
+    }
+    .information span {
+        font-size: 12px;
+    }
+    .buttons {
+        display: none;
+    }
+
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+        margin-bottom: 10px;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1vh 5vw 1vh 5vw;
+    }
+    .box h2 {
+        font-size: 20px;
+    }
+    .box h4 {
+        font-size: 8px;
+    }
 }
