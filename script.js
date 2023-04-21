@@ -93,14 +93,12 @@ btnNavigationSurface.addEventListener('click',  () => {
     textSurface.classList.remove('hidden');
 })
 
-btnMenu.addEventListener('click', () => {
-    if(sideNavigation.classList.value === 'side-navigation hidden') {
-        sideNavigation.classList.remove('hidden');
-        overlay.classList.remove('hidden')
-    } else {sideNavigation.classList.add('hidden'); overlay.classList.add('hidden')
-    }
-})
-overlay.addEventListener('click', () => {
+function closeSidenav() {
     sideNavigation.classList.add('hidden');
     overlay.classList.add('hidden');
-})
+}
+
+function toggleSidenav() {
+    sideNavigation.classList.toggle('hidden');
+    overlay.classList.toggle('hidden');
+}

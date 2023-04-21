@@ -18,7 +18,7 @@
             <h2>the planets</h2>
         </div>
         <div class="menu-icon">
-            <a href="#">
+            <a href="#" onclick="toggleSidenav()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z"/></g>
                 </svg>
             </a>
@@ -59,7 +59,10 @@
                         <h4 class="side-nav-link-text mercury">mercury</h4>
                     </a>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                        <path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+                </a>
             </li>
             <hr class="horizontal-line-side">
             <li class="side-nav-item">
@@ -69,8 +72,10 @@
                         <h4 class="side-nav-link-text venus">venus</h4>
                     </a>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
-                    <path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+                <a href="venus.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                        <path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+                </a>
             </li>
             <hr class="horizontal-line-side">
             <li class="side-nav-item">
@@ -80,8 +85,10 @@
                         <h4 class="side-nav-link-text earth">earth</h4>
                     </a>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
-                    <path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+                <a href="earth.html">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="6" height="8"><path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+                </a>
             </li>
             <hr class="horizontal-line-side">
             <li class="side-nav-item">
@@ -91,8 +98,10 @@
                         <h4 class="side-nav-link-text mars">mars</h4>
                     </a>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
-                    <path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+                <a href="mars.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                        <path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+                </a>
             </li>
             <hr class="horizontal-line-side">
             <li class="side-nav-item">
@@ -102,19 +111,23 @@
                         <h4 class="side-nav-link-text jupiter">jupiter</h4>
                     </a>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
-                    <path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+                <a href="jupiter.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                        <path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+                </a>
             </li>
             <hr class="horizontal-line-side">
             <li class="side-nav-item">
                 <div class="dot-wrapper">
                     <span class="dot saturn"></span>
-                    <a href="#">
+                    <a href="saturn.html">
                         <h4 class="side-nav-link-text saturn">saturn</h4>
                     </a>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
-                    <path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+                <a href="saturn.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                        <path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+                </a>
             </li>
             <hr class="horizontal-line-side">
             <li class="side-nav-item">
@@ -124,9 +137,10 @@
                         <h4 class="side-nav-link-text uranus">uranus</h4>
                     </a>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
-                    <path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/>
-                </svg>
+                <a href="uranus.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                        <path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+                </a>
             </li>
             <hr class="horizontal-line-side">
             <li class="side-nav-item">
@@ -136,9 +150,10 @@
                         <h4 class="side-nav-link-text neptune">neptune</h4>
                     </a>
                 </div>
+                <a href="neptune.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
-                        <path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/>
-                    </svg>
+                        <path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4"/></svg>
+                </a>
             </li>
         </ul>
     </div>
@@ -248,7 +263,7 @@
             </div>
         </div>
     </div>
-    <div class="overlay hidden"></div>
+    <div class="overlay hidden" onclick="closeSidenav()"></div>
     <script src="script.js"></script>
 </body>
 </html>
