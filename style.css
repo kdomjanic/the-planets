@@ -218,7 +218,6 @@ h4 {
     transition: all 0.5s;
     background-color: var(--midnight-blue-color);
 }
-
 .side-nav-links {
     display: flex;
     flex-direction: column;
@@ -283,7 +282,7 @@ h4 {
 
 /* MAIN CONTENT */
 .wrapper {
-    margin: 3vh 10vw 5vh 10vw;
+    margin: 5vh 10vw 5vh 10vw;
 }
 .content {
     display: grid;
@@ -300,7 +299,6 @@ h4 {
     grid-column-start: 1;
     grid-column-end: 3;
     place-items: center;
-    height: 650px;
 }
 
 .image-surface {
@@ -443,9 +441,7 @@ h4 {
 }
 
 /* TABLETS */
-/*@media only screen and (min-width: 600px) and (max-width: 950px)*/
-@media only screen and (min-device-width: 600px) and (max-device-width: 950px)
-{
+@media only screen and (min-device-width: 600px) and (max-device-width: 950px) {
     .header {
         height: 15vh;
         width: inherit;
@@ -618,7 +614,7 @@ h4 {
 }
 
 /* PHONES */
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
     .header {
         height: 7vh;
         display: flex;
@@ -730,7 +726,7 @@ h4 {
 
     .image-surface {
         position: absolute;
-        top: 300px;
+        top: 290px;
         height: 110px;
         width: 90px;
     }
