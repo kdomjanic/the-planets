@@ -1,6 +1,5 @@
 'use strict';
 
-// const imageContainer = document.querySelector('.image-container')
 
 const imageOverview = document.querySelector('.image-overview')
 const imageInternal = document.querySelector('.image-internal')
@@ -11,6 +10,7 @@ const textInternal = document.querySelector('.text-internal')
 const textSurface = document.querySelector('.text-surface')
 
 const sideNavigation = document.querySelector('.side-navigation')
+const overlay = document.querySelector('.overlay')
 
 const btnOverview = document.querySelector('.btn-overview')
 const btnInternal = document.querySelector('.btn-internal')
@@ -67,8 +67,6 @@ btnNavigationOverview.addEventListener('click',  () => {
     btnNavigationSurface.classList.remove('active-tab');
     imageSurface.classList.add('hidden');
     textSurface.classList.add('hidden');
-    // imageContainer.classList.add('image');
-    // imageContainer.classList.remove('image-surface-alignment');
 })
 
 btnNavigationInternal.addEventListener('click',  () => {
@@ -81,8 +79,6 @@ btnNavigationInternal.addEventListener('click',  () => {
     btnNavigationSurface.classList.remove('active-tab');
     imageSurface.classList.add('hidden');
     textSurface.classList.add('hidden');
-    // imageContainer.classList.add('image');
-    // imageContainer.classList.remove('image-surface-alignment');
 })
 
 btnNavigationSurface.addEventListener('click',  () => {
@@ -95,13 +91,16 @@ btnNavigationSurface.addEventListener('click',  () => {
     btnNavigationSurface.classList.add('active-tab');
     imageSurface.classList.remove('hidden');
     textSurface.classList.remove('hidden');
-    // imageContainer.classList.remove('image');
-    // imageContainer.classList.add('image-surface-alignment');
 })
 
 btnMenu.addEventListener('click', () => {
     if(sideNavigation.classList.value === 'side-navigation hidden') {
         sideNavigation.classList.remove('hidden');
-    } else {sideNavigation.classList.add('hidden')
+        overlay.classList.remove('hidden')
+    } else {sideNavigation.classList.add('hidden'); overlay.classList.add('hidden')
     }
+})
+overlay.addEventListener('click', () => {
+    sideNavigation.classList.add('hidden');
+    overlay.classList.add('hidden');
 })
