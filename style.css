@@ -19,7 +19,7 @@
     box-sizing: border-box;
 }
 
-body {
+body, p {
     background-color: var(--midnight-blue-color);
     background-image: url("assets/background-stars.svg");
     margin: 0;
@@ -290,7 +290,7 @@ h4 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-content: start;
-    height: 800px;
+    height: 700px;
     /*margin: 0 0 7vh 0 ;*/
 }
 
@@ -338,7 +338,6 @@ h4 {
     width: 450px
 }
 
-
 .image-internal.mercury {
     height: 290px;
     width: 290px
@@ -373,18 +372,18 @@ h4 {
 }
 
 
-
 .image-surface {
     position:absolute;
-    top: 540px;
+    top: 600px;
     height: 200px;
     width: 160px
 }
 
 /* INFORMATION */
 .information {
-    width: 27vw;
+    width: 26vw;
     padding-left: 2vw;
+    padding-top: 5vh;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
@@ -418,14 +417,15 @@ h4 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 5px;
-    place-items: end;
-    margin-top: 15px;
+    place-items: start;
+    /*margin-top: 15px;*/
 }
 .buttons-list {
-    width: 27vw;
+    width: 26vw;
     justify-content: end;
     list-style-type: none;
     padding-left: 2vw;
+    /*padding-bottom: 2vh;*/
 }
 .btn {
     border: 1px solid rgba(255, 255, 255, .2);
