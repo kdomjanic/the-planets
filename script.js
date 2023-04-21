@@ -1,6 +1,6 @@
 'use strict';
 
-const imageContainer = document.querySelector('.image-container')
+// const imageContainer = document.querySelector('.image-container')
 
 const imageOverview = document.querySelector('.image-overview')
 const imageInternal = document.querySelector('.image-internal')
@@ -67,8 +67,8 @@ btnNavigationOverview.addEventListener('click',  () => {
     btnNavigationSurface.classList.remove('active-tab');
     imageSurface.classList.add('hidden');
     textSurface.classList.add('hidden');
-    imageContainer.classList.add('image');
-    imageContainer.classList.remove('image-surface-alignment');
+    // imageContainer.classList.add('image');
+    // imageContainer.classList.remove('image-surface-alignment');
 })
 
 btnNavigationInternal.addEventListener('click',  () => {
@@ -81,8 +81,8 @@ btnNavigationInternal.addEventListener('click',  () => {
     btnNavigationSurface.classList.remove('active-tab');
     imageSurface.classList.add('hidden');
     textSurface.classList.add('hidden');
-    imageContainer.classList.add('image');
-    imageContainer.classList.remove('image-surface-alignment');
+    // imageContainer.classList.add('image');
+    // imageContainer.classList.remove('image-surface-alignment');
 })
 
 btnNavigationSurface.addEventListener('click',  () => {
@@ -95,8 +95,8 @@ btnNavigationSurface.addEventListener('click',  () => {
     btnNavigationSurface.classList.add('active-tab');
     imageSurface.classList.remove('hidden');
     textSurface.classList.remove('hidden');
-    imageContainer.classList.remove('image');
-    imageContainer.classList.add('image-surface-alignment');
+    // imageContainer.classList.remove('image');
+    // imageContainer.classList.add('image-surface-alignment');
 })
 
 btnMenu.addEventListener('click', () => {
