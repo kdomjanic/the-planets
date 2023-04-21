@@ -1,6 +1,5 @@
 'use strict';
 
-
 const imageOverview = document.querySelector('.image-overview')
 const imageInternal = document.querySelector('.image-internal')
 const imageSurface = document.querySelector('.image-surface')
@@ -15,13 +14,8 @@ const overlay = document.querySelector('.overlay')
 const btnOverview = document.querySelector('.btn-overview')
 const btnInternal = document.querySelector('.btn-internal')
 const btnSurface = document.querySelector('.btn-surface')
-const btnMenu = document.querySelector('.menu-icon')
-const btnNavigationOverview = document.querySelector('.btn-navi-overview')
-const btnNavigationInternal = document.querySelector('.btn-navi-internal')
-const btnNavigationSurface = document.querySelector('.btn-navi-surface')
 
-
-btnOverview.addEventListener('click',  () => {
+function openOverview() {
     btnOverview.classList.add('active')
     imageOverview.classList.remove('hidden');
     textOverview.classList.remove('hidden');
@@ -31,9 +25,9 @@ btnOverview.addEventListener('click',  () => {
     btnSurface.classList.remove('active')
     imageSurface.classList.add('hidden');
     textSurface.classList.add('hidden')
-})
+}
 
-btnInternal.addEventListener('click',  () => {
+function openInternalStructure() {
     btnOverview.classList.remove('active');
     imageOverview.classList.add('hidden');
     textOverview.classList.add('hidden');
@@ -43,9 +37,9 @@ btnInternal.addEventListener('click',  () => {
     btnSurface.classList.remove('active');
     imageSurface.classList.add('hidden');
     textSurface.classList.add('hidden')
-})
+}
 
-btnSurface.addEventListener('click',  () => {
+function openSurfaceGeology(){
     btnOverview.classList.remove('active');
     imageOverview.classList.remove('hidden');
     textOverview.classList.add('hidden');
@@ -55,43 +49,7 @@ btnSurface.addEventListener('click',  () => {
     btnSurface.classList.add('active');
     imageSurface.classList.remove('hidden');
     textSurface.classList.remove('hidden')
-})
-
-btnNavigationOverview.addEventListener('click',  () => {
-    btnNavigationOverview.classList.add('active-tab');
-    imageOverview.classList.remove('hidden');
-    textOverview.classList.remove('hidden');
-    btnNavigationInternal.classList.remove('active-tab');
-    imageInternal.classList.add('hidden');
-    textInternal.classList.add('hidden');
-    btnNavigationSurface.classList.remove('active-tab');
-    imageSurface.classList.add('hidden');
-    textSurface.classList.add('hidden');
-})
-
-btnNavigationInternal.addEventListener('click',  () => {
-    btnNavigationOverview.classList.remove('active-tab');
-    imageOverview.classList.add('hidden');
-    textOverview.classList.add('hidden');
-    btnNavigationInternal.classList.add('active-tab');
-    imageInternal.classList.remove('hidden');
-    textInternal.classList.remove('hidden');
-    btnNavigationSurface.classList.remove('active-tab');
-    imageSurface.classList.add('hidden');
-    textSurface.classList.add('hidden');
-})
-
-btnNavigationSurface.addEventListener('click',  () => {
-    btnNavigationOverview.classList.remove('active-tab');
-    imageOverview.classList.remove('hidden');
-    textOverview.classList.add('hidden');
-    btnNavigationInternal.classList.remove('active-tab');
-    imageInternal.classList.add('hidden');
-    textInternal.classList.add('hidden');
-    btnNavigationSurface.classList.add('active-tab');
-    imageSurface.classList.remove('hidden');
-    textSurface.classList.remove('hidden');
-})
+}
 
 function closeSidenav() {
     sideNavigation.classList.add('hidden');
