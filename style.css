@@ -1,6 +1,6 @@
 :root {
     --white-color: #ffffff;
-    --midnight-blue-color: #070724;
+    --background-color: #070724;
     --dark-grey-color: #38384F;
     --light-grey-color: #838391;
     --mercury-color: #419EBB;
@@ -20,7 +20,7 @@
 }
 
 body, p {
-    background-color: var(--midnight-blue-color);
+    background-color: var(--background-color);
     background-image: url("assets/background-stars.svg");
     margin: 0;
     width: 100%;
@@ -29,11 +29,9 @@ body, p {
     line-height: 25px;
     color: var(--white-color);
 }
-
 a {
     text-decoration: none;
 }
-
 h1 {
     font-family: 'Antonio', sans-serif;
     font-style: normal;
@@ -81,7 +79,6 @@ h4 {
 /* NAVIGATION */
 .header {
     height: 10vh;
-    width: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -100,9 +97,6 @@ h4 {
 }
 .nav-item h4 {
     font-size: 11px;
-}
-.nav-link {
-    text-decoration: none;
 }
 .nav-link-text {
     display: block;
@@ -158,53 +152,38 @@ h4 {
 .small-navigation h3 {
     font-size: 9px;
 }
-
 .btn-navi {
     width: 80px;
     display: flex;
     justify-content: center;
-    align-items: center;
     text-decoration: none;
 }
-
-.active-tab.mercury {
+.active-tab {
     height: 7vh;
     align-items: center;
+}
+.active-tab.mercury {
     border-bottom: 2px solid var(--mercury-color);
 }
 .active-tab.venus {
-    height: 7vh;
-    align-items: center;
     border-bottom: 2px solid var(--venus-color);
 }
 .active-tab.earth {
-    height: 7vh;
-    align-items: center;
     border-bottom: 2px solid var(--earth-color);
 }
 .active-tab.mars {
-    height: 7vh;
-    align-items: center;
     border-bottom: 2px solid var(--mars-color);
 }
 .active-tab.jupiter {
-    height: 7vh;
-    align-items: center;
     border-bottom: 2px solid var(--jupiter-color);
 }
 .active-tab.saturn {
-    height: 7vh;
-    align-items: center;
     border-bottom: 2px solid var(--saturn-color);
 }
 .active-tab.uranus {
-    height: 7vh;
-    align-items: center;
     border-bottom: 2px solid var(--uranus-color);
 }
 .active-tab.neptune {
-    height: 7vh;
-    align-items: center;
     border-bottom: 2px solid var(--neptune-color);
 }
 
@@ -216,13 +195,12 @@ h4 {
     width: 100%;
     z-index: 1000;
     transition: all 0.5s;
-    background-color: var(--midnight-blue-color);
+    background-color: var(--background-color);
 }
 .side-nav-links {
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 100%;
     padding: 0;
     margin: 0;
 }
@@ -300,7 +278,6 @@ h4 {
     grid-column-end: 3;
     place-items: center;
 }
-
 .image-surface {
     position:absolute;
     top: 520px;
@@ -365,10 +342,9 @@ h4 {
     width: 100%;
     height: 48px;
     cursor: pointer;
-    margin: 15px 0 0 0;
+    margin-top: 15px;
     padding: 10px 0 0 25px;
 }
-
 .active.mercury {
     background-color: var(--mercury-color);
 }
@@ -393,7 +369,6 @@ h4 {
 .active.neptune {
     background-color: var(--neptune-color);
 }
-
 .btn:hover {
     background-color: var(--dark-grey-color);
 }
@@ -412,7 +387,6 @@ h4 {
     border: 1px solid rgba(255, 255, 255, .2);
     width: 23%;
     height: 130px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -444,7 +418,6 @@ h4 {
 @media only screen and (min-device-width: 600px) and (max-device-width: 950px) {
     .header {
         height: 15vh;
-        width: inherit;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -463,9 +436,6 @@ h4 {
     }
     .nav-item h4 {
         font-size: 11px;
-    }
-    .nav-link {
-        text-decoration: none;
     }
     .nav-link-text {
         display: block;
@@ -523,6 +493,7 @@ h4 {
         height: 285px;
         width: 285px
     }
+
     .image-internal.mercury {
         height: 184px;
         width: 184px
